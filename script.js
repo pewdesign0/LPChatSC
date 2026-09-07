@@ -46,6 +46,19 @@
   onScroll(handleNavbarScroll);
   handleNavbarScroll(); // Run on load
 
+  /* Keep mobile browsers from preserving a horizontal page offset. */
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    const resetHorizontalScroll = function () {
+      const scrollingElement = document.scrollingElement || document.documentElement;
+      if (scrollingElement.scrollLeft !== 0) scrollingElement.scrollLeft = 0;
+    };
+
+    window.addEventListener('scroll', resetHorizontalScroll, { passive: true });
+    window.addEventListener('resize', resetHorizontalScroll, { passive: true });
+    window.addEventListener('pageshow', resetHorizontalScroll, { passive: true });
+    resetHorizontalScroll();
+  }
+
 
   /* ----------------------------------------------------------
      MOBILE MENU

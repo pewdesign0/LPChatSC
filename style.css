@@ -2568,7 +2568,9 @@ body {
   body {
     width: 100%;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
