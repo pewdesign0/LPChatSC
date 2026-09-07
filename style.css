@@ -3374,7 +3374,8 @@ body {
 
 /* Nav CTA pulse */
 #nav-cta-btn {
-  animation: nav-btn-pulse 3s ease-in-out infinite;
+  animation: none;
+  box-shadow: var(--glow-btn);
 }
 
 @keyframes nav-btn-pulse {

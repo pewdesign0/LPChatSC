@@ -185,10 +185,15 @@
   const heroSection = document.querySelector('.hero');
 
   if (heroMockup && heroSection && window.matchMedia('(min-width: 1024px)').matches) {
+    let heroRect = heroSection.getBoundingClientRect();
+
+    window.addEventListener('resize', function () {
+      heroRect = heroSection.getBoundingClientRect();
+    }, { passive: true });
+
     heroSection.addEventListener('mousemove', function (e) {
-      const rect = heroSection.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      const x = (e.clientX - heroRect.left) / heroRect.width - 0.5;
+      const y = (e.clientY - heroRect.top) / heroRect.height - 0.5;
 
       heroMockup.style.transform = `
         translateY(${-16 * Math.sin(Date.now() / 3000)}px)
@@ -764,10 +769,16 @@
      ---------------------------------------------------------- */
   if (!prefersReduced && window.matchMedia('(min-width: 1024px)').matches) {
     document.querySelectorAll('.btn-primary').forEach(function (btn) {
+      let buttonRect;
+
+      btn.addEventListener('mouseenter', function () {
+        buttonRect = btn.getBoundingClientRect();
+      });
+
       btn.addEventListener('mousemove', function (e) {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
+        if (!buttonRect) return;
+        const x = e.clientX - buttonRect.left - buttonRect.width / 2;
+        const y = e.clientY - buttonRect.top - buttonRect.height / 2;
         btn.style.transform = `translate(${x * 0.12}px, ${y * 0.20}px)`;
       });
       btn.addEventListener('mouseleave', function () {
@@ -808,12 +819,18 @@
      ---------------------------------------------------------- */
   if (!prefersReduced && window.matchMedia('(min-width: 768px)').matches) {
     document.querySelectorAll('.pricing-card').forEach(function (card) {
+      let cardRect;
+
+      card.addEventListener('mouseenter', function () {
+        cardRect = card.getBoundingClientRect();
+      });
+
       card.addEventListener('mousemove', function (e) {
-        const rect = card.getBoundingClientRect();
-        const cx = rect.left + rect.width / 2;
-        const cy = rect.top + rect.height / 2;
-        const dx = (e.clientX - cx) / (rect.width / 2);
-        const dy = (e.clientY - cy) / (rect.height / 2);
+        if (!cardRect) return;
+        const cx = cardRect.left + cardRect.width / 2;
+        const cy = cardRect.top + cardRect.height / 2;
+        const dx = (e.clientX - cx) / (cardRect.width / 2);
+        const dy = (e.clientY - cy) / (cardRect.height / 2);
         // Skip tilt for Pro card (already scaled)
         const isProCard = card.classList.contains('pricing-card-pro');
         const scale = isProCard ? 'scale(1.04)' : 'scale(1.01)';

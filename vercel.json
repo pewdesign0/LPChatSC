@@ -4,8 +4,7 @@
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "style.css", "use": "@vercel/static" },
     { "src": "script.js", "use": "@vercel/static" },
-    { "src": "images/**", "use": "@vercel/static" },
-    { "src": "Marca/Identidade Visual/Digital/PNG/Symbol v2.png", "use": "@vercel/static" }
+    { "src": "images/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "handle": "filesystem" },
