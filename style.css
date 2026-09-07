@@ -588,6 +588,8 @@ BACKGROUND MESH / ORBS==========================================================
 .nav-logo img {
   height: 36px;
   width: auto;
+  max-width: none;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -2245,6 +2247,8 @@ BACKGROUND MESH / ORBS==========================================================
 .footer-brand img {
   height: 32px;
   width: auto;
+  max-width: 180px;
+  object-fit: contain;
   margin-bottom: var(--space-md);
 }
 
@@ -2456,7 +2460,7 @@ body {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
     text-align: center;
-    transform: translateX(clamp(-64px, -8vw, -28px));
+    transform: translateX(clamp(-110px, -15vw, -52px));
   }
 
   .hero-actions {
@@ -2625,11 +2629,25 @@ body {
 
   .cta-actions {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    width: 100%;
   }
 
   .cta-actions .btn {
     justify-content: center;
+    width: min(100%, 420px);
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .cta-section > .container {
+    padding-inline: 20px;
+  }
+
+  .cta-inner {
+    width: 100%;
+    padding-inline: 0;
   }
 
   .trust-bar-inner {
@@ -3766,11 +3784,14 @@ body {
   }
 
   .screenshots-tabs {
-    justify-content: flex-start;
-    overflow-x: auto;
+    justify-content: center;
+    overflow: visible;
     max-width: 100%;
-    padding-bottom: 8px;
-    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .screen-tab {
