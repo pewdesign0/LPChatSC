@@ -2414,16 +2414,21 @@ BACKGROUND MESH / ORBS==========================================================
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 72px;
-  left: 0;
-  right: 0;
-  background: rgba(13, 11, 30, 0.97);
+  top: 78px;
+  left: 16px;
+  right: 16px;
+  max-height: calc(100dvh - 94px);
+  overflow-y: auto;
+  background: rgba(13, 11, 30, 0.94);
   backdrop-filter: blur(24px);
-  border-bottom: 1px solid var(--border-subtle);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(8, 7, 20, 0.45);
   z-index: 999;
-  padding: var(--space-lg);
+  padding: 12px 16px 16px;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 0;
 }
 
 .mobile-menu.open {
@@ -2431,10 +2436,10 @@ BACKGROUND MESH / ORBS==========================================================
 }
 
 .mobile-menu a {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: var(--fw-medium);
   color: rgba(255, 255, 255, 0.82);
-  padding: var(--space-sm) 0;
+  padding: 10px 4px;
   border-bottom: 1px solid var(--border-subtle);
   transition: color var(--transition-fast);
 }
@@ -2446,7 +2451,10 @@ BACKGROUND MESH / ORBS==========================================================
 .mobile-menu .btn {
   width: 100%;
   justify-content: center;
-  margin-top: var(--space-sm);
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-bottom: 0;
 }
 
 .mobile-menu .mobile-menu-secondary {
