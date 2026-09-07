@@ -1,0 +1,19 @@
+# ChatSC
+
+> Plataforma de atendimento e sucesso do cliente para escritórios contábeis.
+
+O ChatSC centraliza conversas, distribui atendimentos, organiza demandas e acompanha a execução do trabalho em uma operação conectada à rotina contábil.
+
+## Links principais
+
+- [Página inicial](https://chatsc.com.br/)
+- [Produto](https://chatsc.com.br/#produto)
+- [Como funciona](https://chatsc.com.br/#como-funciona)
+- [Recursos](https://chatsc.com.br/#recursos)
+- [Integrações](https://chatsc.com.br/#integracoes)
+- [Preços](https://chatsc.com.br/#precos)
+- [Perguntas frequentes](https://chatsc.com.br/#faq)
+
+## Contato
+
+- [Agendar uma demonstração pelo WhatsApp](https://wa.me/5581999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChatSC.)
