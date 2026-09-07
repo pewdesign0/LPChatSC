@@ -18,7 +18,8 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : decodeURIComponent(req.url));
+  const requestPath = new URL(req.url, `http://${req.headers.host || 'localhost'}`).pathname;
+  let filePath = path.join(__dirname, requestPath === '/' ? 'index.html' : decodeURIComponent(requestPath));
   
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {

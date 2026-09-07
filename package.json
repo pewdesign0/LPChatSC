@@ -2,9 +2,7 @@
   "name": "lp-chatsc",
   "version": "1.0.0",
   "description": "Landing Page ChatSC — Plataforma de Atendimento para Escritórios Contábeis",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": [
