@@ -2568,7 +2568,7 @@ body {
   body {
     width: 100%;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden !important;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -2591,8 +2591,24 @@ body {
   }
 
   .navbar {
-    width: 100vw;
+    width: auto;
+    max-width: 100%;
     padding-inline: 16px;
+  }
+
+  .hero,
+  .section,
+  .footer,
+  .trust-bar {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
   }
 
   .nav-links {
