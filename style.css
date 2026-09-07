@@ -2481,10 +2481,7 @@ body {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
     text-align: center;
-    width: calc(100% - clamp(28px, 8vw, 52px));
-    margin-left: 0;
-    margin-right: auto;
-    transform: none;
+    transform: translateX(clamp(-110px, -15vw, -52px));
   }
 
   .hero-actions {
