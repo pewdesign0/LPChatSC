@@ -3152,8 +3152,9 @@ body {
 .pricing-note {
   text-align: center;
   margin-top: var(--space-xl);
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: var(--fw-medium);
+  color: rgba(25, 22, 44, 0.72);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3162,6 +3163,9 @@ body {
 
 .pricing-note svg {
   color: var(--purple-light);
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.4;
   flex-shrink: 0;
 }
 
@@ -3268,14 +3272,15 @@ body {
 
 /* Social icon fill animation */
 .footer-social a {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--border-subtle);
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(138, 111, 240, 0.42);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: #B8A6FF;
+  background: rgba(101, 66, 232, 0.14);
   transition: all 0.25s ease;
   position: relative;
   overflow: hidden;
@@ -3293,6 +3298,8 @@ body {
 .footer-social a svg {
   position: relative;
   z-index: 1;
+  width: 21px;
+  height: 21px;
 }
 
 .footer-social a:hover {
@@ -3572,9 +3579,27 @@ body {
   }
 
   .pricing-note {
-    font-size: 0.80rem;
-    flex-direction: column;
-    gap: 4px;
+    max-width: 320px;
+    margin-inline: auto;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .pricing-note svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer-social a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-social a svg {
+    width: 23px;
+    height: 23px;
   }
 }
 
