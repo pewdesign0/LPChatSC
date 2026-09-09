@@ -2,6 +2,8 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
+    { "src": "politica-de-privacidade.html", "use": "@vercel/static" },
+    { "src": "termos-de-uso.html", "use": "@vercel/static" },
     { "src": "llms.txt", "use": "@vercel/static" },
     { "src": "style.css", "use": "@vercel/static" },
     { "src": "script.js", "use": "@vercel/static" },
@@ -9,6 +11,8 @@
   ],
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/politica-de-privacidade/?", "dest": "/politica-de-privacidade.html" },
+    { "src": "/termos-de-uso/?", "dest": "/termos-de-uso.html" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 }

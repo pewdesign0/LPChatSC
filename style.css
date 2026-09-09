@@ -795,12 +795,13 @@ BACKGROUND MESH / ORBS==========================================================
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
-  transform: translateX(clamp(-480px, -12vw, -340px));
+  transform: none;
 }
 
 .hero-text {
   text-align: left;
   width: 100%;
+  min-width: 0;
   margin: 0;
 }
 
@@ -846,6 +847,7 @@ BACKGROUND MESH / ORBS==========================================================
   font-weight: var(--fw-black);
   line-height: 1.1;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
   margin-bottom: var(--space-md);
 }
 
@@ -898,7 +900,7 @@ BACKGROUND MESH / ORBS==========================================================
   width: 100%;
   min-width: 0;
   overflow: visible;
-  transform: translateX(clamp(32px, 4vw, 72px));
+  transform: none;
 }
 
 .hero-actions .btn-lg {
@@ -1460,17 +1462,18 @@ BACKGROUND MESH / ORBS==========================================================
   font-weight: var(--fw-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--purple-light);
-  background: rgba(101, 66, 232, 0.12);
-  border: 1px solid rgba(101, 66, 232, 0.30);
-  padding: 4px 10px;
+  color: #fff;
+  background: #5b35d5;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow: 0 4px 14px rgba(13, 11, 30, 0.3);
+  padding: 5px 11px;
   border-radius: var(--radius-full);
 }
 
 .how-step-pill.highlight {
-  color: var(--pink);
-  background: rgba(217, 95, 186, 0.12);
-  border-color: rgba(217, 95, 186, 0.30);
+  color: #fff;
+  background: #007fa8;
+  border-color: rgba(255, 255, 255, 0.38);
 }
 
 .how-step h3 {
@@ -2157,7 +2160,7 @@ BACKGROUND MESH / ORBS==========================================================
   border-radius: 0;
 }
 
-.cta-section > .container {
+.cta-section>.container {
   position: relative;
   z-index: 2;
 }
@@ -2481,7 +2484,7 @@ body {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
     text-align: center;
-    transform: translateX(clamp(-110px, -15vw, -52px));
+    transform: none;
   }
 
   .hero-actions {
@@ -2564,6 +2567,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   html,
   body {
     width: 100vw !important;
@@ -2581,11 +2585,11 @@ body {
     margin: 0;
   }
 
-  body > .navbar,
-  body > .hero,
-  body > section,
-  body > .trust-bar,
-  body > .footer {
+  body>.navbar,
+  body>.hero,
+  body>section,
+  body>.trust-bar,
+  body>.footer {
     width: 100vw;
     min-width: 100vw;
     max-width: 100vw;
@@ -2715,7 +2719,7 @@ body {
     text-align: center;
   }
 
-  .cta-section > .container {
+  .cta-section>.container {
     padding-inline: 20px;
   }
 
@@ -3898,4 +3902,270 @@ body {
     padding: 8px 14px;
     font-size: 0.85rem;
   }
+}
+
+/* ============================================================
+   CONTENT AND RESPONSIVE REFINEMENTS
+   ============================================================ */
+.problem-grid {
+  margin-top: 0;
+}
+
+.hero > .container {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.faq-answer-inner {
+  padding: var(--space-lg);
+}
+
+.api-logo-box {
+  color: var(--text-dark);
+  background: #fff;
+  border: 1px solid rgba(101, 66, 232, 0.18);
+  box-shadow: 0 10px 28px rgba(49, 33, 110, 0.12);
+}
+
+.api-logo-box.whatsapp {
+  color: #128c4a;
+  background: rgba(37, 211, 102, 0.08);
+  border-color: rgba(37, 211, 102, 0.28);
+}
+
+.api-logo-box.coex {
+  background: rgba(101, 66, 232, 0.06);
+  border-color: rgba(101, 66, 232, 0.28);
+}
+
+.api-logo-box.coex img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.how-step-1 .how-step-pill { color: #fff; background: #5b35d5; border-color: rgba(255, 255, 255, 0.38); }
+.how-step-2 .how-step-pill { color: #fff; background: #7136c4; border-color: rgba(255, 255, 255, 0.38); }
+.how-step-3 .how-step-pill { color: #fff; background: #87329f; border-color: rgba(255, 255, 255, 0.38); }
+.how-step-4 .how-step-pill { color: #fff; background: #9d327f; border-color: rgba(255, 255, 255, 0.38); }
+.how-step-5 .how-step-pill { color: #fff; background: #a73678; border-color: rgba(255, 255, 255, 0.38); }
+.how-step-6 .how-step-pill { color: #fff; background: #007fa8; border-color: rgba(255, 255, 255, 0.38); }
+
+.pricing-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pricing-card {
+  padding: 2rem 1.5rem;
+}
+
+.pricing-users {
+  margin: 0 -0.25rem 0.25rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  color: var(--purple) !important;
+  background: rgba(101, 66, 232, 0.09);
+  border: 1px solid rgba(101, 66, 232, 0.18);
+}
+
+.pricing-card-pro .pricing-users {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.essencial-badge {
+  color: #6542e8;
+  background: rgba(101, 66, 232, 0.1);
+  border: 1px solid rgba(101, 66, 232, 0.28);
+}
+
+.pricing-carousel-controls {
+  display: none;
+}
+
+.screenshots-panels {
+  min-height: 570px;
+  overflow-anchor: none;
+}
+
+.screen-panel-inner {
+  min-height: 570px;
+}
+
+.screen-panel-img-wrapper {
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-panel-img {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  object-fit: contain;
+  background: #100d2e;
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    touch-action: auto;
+  }
+
+  .problem-section {
+    padding-top: var(--section-py);
+  }
+
+  .api-logo-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .api-logo-item {
+    min-width: 0;
+  }
+
+  .api-logo-item span {
+    white-space: nowrap;
+    font-size: 0.74rem;
+  }
+
+  .pricing-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: -1rem 0 1.25rem;
+  }
+
+  .pricing-carousel-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: var(--purple);
+    background: #fff;
+    border: 1px solid rgba(101, 66, 232, 0.25);
+    box-shadow: 0 6px 18px rgba(101, 66, 232, 0.12);
+  }
+
+  .pricing-carousel-status {
+    min-width: 64px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+  }
+
+  .pricing-grid {
+    display: flex;
+    max-width: none;
+    margin-inline: calc(var(--space-md) * -1);
+    padding: 18px var(--space-md) 24px;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--space-md);
+    scrollbar-width: none;
+    touch-action: pan-x;
+    overscroll-behavior-inline: contain;
+  }
+
+  .pricing-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pricing-card {
+    flex: 0 0 calc(100vw - 64px);
+    max-width: 360px;
+    scroll-snap-align: center;
+  }
+
+  .pricing-card-pro,
+  .pricing-card-pro:hover {
+    transform: none;
+    order: initial;
+  }
+
+  .screenshots-panels,
+  .screen-panel-inner {
+    min-height: 0;
+  }
+
+  .screen-panel-img-wrapper {
+    height: 390px;
+  }
+}
+
+/* Legal pages */
+.legal-page {
+  background: var(--bg-base);
+}
+
+.legal-header {
+  padding: 8rem 0 3rem;
+  color: #fff;
+  background: var(--grad-hero);
+}
+
+.legal-header .container,
+.legal-content {
+  max-width: 920px;
+}
+
+.legal-header h1 {
+  margin: 0.75rem 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.08;
+}
+
+.legal-header p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.legal-content {
+  padding: 4rem var(--space-lg) 6rem;
+  margin: 0 auto;
+}
+
+.legal-content section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 100px;
+}
+
+.legal-content h2 {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  font-size: 1.35rem;
+}
+
+.legal-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .legal-header { padding: 6.5rem 0 2.5rem; }
+  .legal-content { padding: 3rem var(--space-md) 4rem; }
 }

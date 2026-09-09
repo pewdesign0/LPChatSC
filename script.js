@@ -873,6 +873,7 @@
   if (screenTabs.length && screenPanels.length) {
     screenTabs.forEach(function (tab) {
       tab.addEventListener('click', function () {
+        const scrollPosition = window.scrollY;
         const targetTabId = 'tab-' + this.getAttribute('data-tab');
 
         screenTabs.forEach(function (t) {
@@ -890,9 +891,59 @@
         const activePanel = document.getElementById(targetTabId);
         if (activePanel) {
           activePanel.classList.add('active');
+          requestAnimationFrame(function () {
+            window.scrollTo({ top: scrollPosition, left: 0, behavior: 'instant' });
+          });
         }
       });
     });
+  }
+
+  /* ----------------------------------------------------------
+     PRICING — Mobile carousel controls and status
+     ---------------------------------------------------------- */
+  const pricingCarousel = document.getElementById('pricing-carousel');
+  const pricingPrev = document.getElementById('pricing-prev');
+  const pricingNext = document.getElementById('pricing-next');
+  const pricingCurrent = document.getElementById('pricing-current');
+
+  if (pricingCarousel && pricingPrev && pricingNext && pricingCurrent) {
+    const pricingCards = Array.from(pricingCarousel.querySelectorAll('.pricing-card'));
+
+    function getPricingIndex() {
+      const carouselCenter = pricingCarousel.scrollLeft + pricingCarousel.clientWidth / 2;
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      pricingCards.forEach(function (card, index) {
+        const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+        const distance = Math.abs(cardCenter - carouselCenter);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      return closestIndex;
+    }
+
+    function updatePricingStatus() {
+      pricingCurrent.textContent = String(getPricingIndex() + 1);
+    }
+
+    function goToPricingCard(direction) {
+      const currentIndex = getPricingIndex();
+      const targetIndex = Math.max(0, Math.min(pricingCards.length - 1, currentIndex + direction));
+      pricingCards[targetIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    pricingPrev.addEventListener('click', function () { goToPricingCard(-1); });
+    pricingNext.addEventListener('click', function () { goToPricingCard(1); });
+    pricingCarousel.addEventListener('scroll', function () {
+      requestAnimationFrame(updatePricingStatus);
+    }, { passive: true });
+    window.addEventListener('resize', updatePricingStatus, { passive: true });
+    updatePricingStatus();
   }
 
 })();
