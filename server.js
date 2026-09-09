@@ -21,7 +21,8 @@ const server = http.createServer((req, res) => {
   const requestPath = new URL(req.url, `http://${req.headers.host || 'localhost'}`).pathname;
   const pageAliases = {
     '/politica-de-privacidade': 'politica-de-privacidade.html',
-    '/termos-de-uso': 'termos-de-uso.html'
+    '/termos-de-uso': 'termos-de-uso.html',
+    '/v2': 'index-v2.html'
   };
   const requestedFile = requestPath === '/' ? 'index.html' : (pageAliases[requestPath] || decodeURIComponent(requestPath));
   let filePath = path.join(__dirname, requestedFile);

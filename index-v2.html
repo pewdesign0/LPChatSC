@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="content-language" content="pt-BR" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" /></noscript>
+
+  <title>ChatSC — WhatsApp e Gestão para Escritórios Contábeis</title>
+
+  <meta name="description" content="Centralize atendimentos, organize demandas e gerencie clientes no WhatsApp com o ChatSC. Conectado à rotina contábil via API Oficial Coex." />
+  <meta name="keywords" content="atendimento contábil, WhatsApp para contabilidade, CRM contábil, gestão de clientes, escritório de contabilidade, ChatSC, API oficial WhatsApp, Acessórias, G-Click" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://chatsc.com.br" />
+  <meta name="author" content="ChatSC" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ChatSC — WhatsApp e Gestão para Escritórios Contábeis" />
+  <meta property="og:description" content="Centralize conversas, distribua atendimentos e acompanhe demandas em uma única plataforma integrada à contabilidade." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chatsc.com.br" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "SoftwareApplication",
+    "name": "ChatSC",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Plataforma de atendimento, relacionamento e operação para escritórios contábeis, integrada ao WhatsApp.",
+    "url": "https://chatsc.com.br"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="images/favicon_web.png" />
+  <link rel="apple-touch-icon" href="images/favicon_web.png" />
+  <link rel="stylesheet" href="style.css?v=20260909-1" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo" aria-label="ChatSC — Ir para o início">
+        <img src="images/logo_horizontal_light_web.png" width="450" height="105" alt="ChatSC Logo" class="logo-light" id="nav-logo-light" />
+        <img src="images/logo_horizontal_dark_web.png" width="450" height="105" alt="ChatSC Logo" class="logo-dark" id="nav-logo-dark" />
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#produto">Produto</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#integracoes">Integrações</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="nav-cta">
+        <a href="#como-funciona" class="btn btn-secondary btn-sm" id="nav-demo-link">Ver como funciona</a>
+        <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="nav-cta-btn">
+          <span>Agendar demonstração</span>
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile">
+    <a href="#produto" class="mobile-nav-link">Produto</a>
+    <a href="#recursos" class="mobile-nav-link">Recursos</a>
+    <a href="#integracoes" class="mobile-nav-link">Integrações</a>
+    <a href="#precos" class="mobile-nav-link">Preços</a>
+    <a href="#faq" class="mobile-nav-link">FAQ</a>
+    <a href="#como-funciona" class="btn btn-secondary mobile-menu-secondary">Ver como funciona</a>
+    <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="mobile-cta-btn">
+      <span>Agendar demonstração</span>
+    </a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="inicio" aria-label="Seção principal">
+    <div class="hero-bg"></div>
+    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Text -->
+        <div class="hero-text">
+          <div class="hero-badge reveal">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            Plataforma de atendimento para escritórios contábeis
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-1">
+            Centralize e organize o WhatsApp do seu
+            <span class="gradient-text"> escritório contábil</span>
+          </h1>
+
+          <p class="hero-subtitle reveal reveal-delay-2">
+            Atendimento multiusuário, demandas e gestão de clientes em uma única plataforma integrada à sua rotina contábil.
+          </p>
+
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="hero-cta-primary">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              <span>Agendar demonstração</span>
+            </a>
+            <a href="#como-funciona" class="btn btn-secondary btn-lg" id="hero-cta-secondary">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Ver como funciona</span>
+            </a>
+          </div>
+
+          <div class="hero-badges reveal reveal-delay-4">
+            <span class="hero-tag">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              Múltiplos usuários
+            </span>
+            <span class="hero-tag">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              Fila por departamentos
+            </span>
+            <span class="hero-tag">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              API Oficial WhatsApp
+            </span>
+            <span class="hero-tag">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              Foco Contábil
+            </span>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="hero-visual reveal reveal-right reveal-delay-2">
+          <div class="hero-mockup-wrapper">
+
+            <!-- Floating card 1 -->
+            <div class="float-card float-card-1" aria-hidden="true">
+              <div class="float-card-icon">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="float-card-text">
+                <span class="float-card-label">Demandas resolvidas</span>
+                <span class="float-card-value">+320 este mês</span>
+              </div>
+            </div>
+
+            <!-- Main mockup image -->
+            <img
+              src="images/hero_notebook.jpg"
+              width="900"
+              height="1600"
+              alt="Interface do ChatSC mostrando atendimentos, jornadas e demandas organizadas"
+              class="hero-mockup"
+              id="hero-mockup-img"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+
+            <!-- Floating card 2 -->
+            <div class="float-card float-card-2" aria-hidden="true">
+              <div class="float-card-icon" style="background: linear-gradient(135deg, #D95FBA, #6542E8);">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                </svg>
+              </div>
+              <div class="float-card-text">
+                <span class="float-card-label">Satisfação CSAT</span>
+                <span class="float-card-value">98% positivo</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TRUST BAR
+       ============================================================ -->
+  <div class="trust-bar" aria-label="Integrações e parceiros">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <span class="trust-label">Integrado com</span>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-logos">
+
+          <div class="trust-logo-item">
+            <div class="trust-logo-icon" style="background: rgba(37,211,102,0.10); color: #25D366; font-size: 1.1rem; border-color: rgba(37,211,102,0.20);">
+              ✓
+            </div>
+            <span>API Oficial do WhatsApp</span>
+          </div>
+
+          <div class="trust-logo-item">
+            <div class="trust-logo-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="7" height="7" rx="1" fill="#8A6FF0"/>
+                <rect x="14" y="3" width="7" height="7" rx="1" fill="#8A6FF0"/>
+                <rect x="3" y="14" width="7" height="7" rx="1" fill="#8A6FF0"/>
+                <rect x="14" y="14" width="7" height="7" rx="1" fill="#D95FBA"/>
+              </svg>
+            </div>
+            <span>Acessórias</span>
+          </div>
+
+          <div class="trust-logo-item">
+            <div class="trust-logo-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="#00C6FF" stroke-width="2"/>
+                <path d="M8 12l3 3 5-5" stroke="#00C6FF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span>G-Click</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       PROBLEM SECTION
+       ============================================================ -->
+  <section class="section problem-section" id="produto" aria-label="O problema que resolvemos">
+    <div class="container">
+
+      <div class="problem-grid">
+
+        <div class="problem-text">
+          <span class="section-tag">O desafio</span>
+          <h2 class="section-heading reveal">
+            O WhatsApp da sua contabilidade
+            <span class="gradient-text"> sob controle</span>
+          </h2>
+          <p class="lead reveal reveal-delay-1">
+            Evite a perda de histórico, solicitações esquecidas em celulares individuais e a falta de visibilidade na equipe.
+          </p>
+
+          <div class="problem-items">
+            <div class="problem-item reveal reveal-delay-1">
+              <div class="problem-item-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div class="problem-item-text">
+                <strong>Conversas pulverizadas em celulares</strong>
+                <span>Histórico centralizado e seguro para todo o escritório</span>
+              </div>
+            </div>
+            <div class="problem-item reveal reveal-delay-2">
+              <div class="problem-item-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="problem-item-text">
+                <strong>Solicitações perdidas sem prazo</strong>
+                <span>Transforme mensagens em demandas rastreáveis</span>
+              </div>
+            </div>
+            <div class="problem-item reveal reveal-delay-3">
+              <div class="problem-item-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                </svg>
+              </div>
+              <div class="problem-item-text">
+                <strong>Falta de responsáveis e setores</strong>
+                <span>Roteamento automático para o atendente correto</span>
+              </div>
+            </div>
+            <div class="problem-item reveal reveal-delay-4">
+              <div class="problem-item-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+              <div class="problem-item-text">
+                <strong>Gestão sem relatórios de equipe</strong>
+                <span>Dashboards de tempo de resposta, CSAT e produtividade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-solution reveal reveal-right">
+          <div class="problem-solution-img-wrapper">
+            <img src="images/screen_dashboard_v2.png" width="1823" height="863" alt="Visão do Dashboard ChatSC" class="problem-solution-img" loading="lazy" decoding="async" />
+          </div>
+          <p class="problem-solution-label">A resposta do ChatSC</p>
+          <h3>
+            Atendimento e execução <span class="gradient-text">em um só lugar</span>
+          </h3>
+          <p>
+            Do primeiro contato via WhatsApp ao fechamento interno: prazos, responsáveis e indicadores monitorados em tempo real.
+          </p>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 1.25rem;" id="problem-cta">
+            <span>Conhecer a plataforma</span>
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="section how-section" id="como-funciona" aria-label="Como o ChatSC funciona">
+    <div class="container">
+      <div class="how-intro">
+        <span class="section-tag">Como funciona</span>
+        <h2 class="reveal">Da mensagem do cliente à <span class="gradient-text">solução da demanda</span></h2>
+        <p class="reveal reveal-delay-1">
+          Um fluxo simples que conecta atendimento e operação contábil sem perder o contexto.
+        </p>
+      </div>
+
+      <!-- Visual Workflow Banner -->
+      <div class="how-visual-banner reveal reveal-delay-1">
+        <img src="images/screen_atendimentos_v2.png" width="1025" height="1534" alt="Fluxo visual do atendimento no ChatSC" class="workflow-img" loading="lazy" decoding="async" />
+        <div class="workflow-caption">
+          <span class="workflow-dot"></span> Fluxo automatizado de ponta a ponta
+        </div>
+      </div>
+
+      <div class="how-steps">
+        <div class="how-step how-step-1 reveal reveal-delay-1">
+          <div class="how-step-header">
+            <div class="how-step-number">1</div>
+            <span class="how-step-pill">Etapa 01</span>
+          </div>
+          <h3>Cliente envia mensagem</h3>
+          <p>O contato chega pelo WhatsApp e é centralizado na fila do ChatSC.</p>
+        </div>
+
+        <div class="how-step how-step-2 reveal reveal-delay-2">
+          <div class="how-step-header">
+            <div class="how-step-number">2</div>
+            <span class="how-step-pill">Etapa 02</span>
+          </div>
+          <h3>Identificação automática</h3>
+          <p>O sistema localiza o cadastro da empresa e organiza a solicitação.</p>
+        </div>
+
+        <div class="how-step how-step-3 reveal reveal-delay-3">
+          <div class="how-step-header">
+            <div class="how-step-number">3</div>
+            <span class="how-step-pill">Etapa 03</span>
+          </div>
+          <h3>Direcionamento por setor</h3>
+          <p>A conversa é atribuída ao departamento ou atendente responsável.</p>
+        </div>
+
+        <div class="how-step how-step-4 reveal reveal-delay-4">
+          <div class="how-step-header">
+            <div class="how-step-number">4</div>
+            <span class="how-step-pill">Etapa 04</span>
+          </div>
+          <h3>Registro como demanda</h3>
+          <p>A solicitação vira tarefa ou ordem de serviço com responsável e prazo.</p>
+        </div>
+
+        <div class="how-step how-step-5 reveal reveal-delay-5">
+          <div class="how-step-header">
+            <div class="how-step-number">5</div>
+            <span class="how-step-pill">Etapa 05</span>
+          </div>
+          <h3>Acompanhamento em tempo real</h3>
+          <p>Prazos e status são monitorados pela equipe e pela gestão.</p>
+        </div>
+
+        <div class="how-step how-step-6 reveal reveal-delay-5">
+          <div class="how-step-header">
+            <div class="how-step-number highlight">6</div>
+            <span class="how-step-pill highlight">Etapa 06</span>
+          </div>
+          <h3>Métricas e relatórios</h3>
+          <p>Análise imediata de satisfação (CSAT), tempo de resposta e produtividade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRODUCT SCREENSHOTS — "Por dentro do sistema"
+       ============================================================ -->
+  <section class="section screenshots-section" id="plataforma" aria-label="Conheça a plataforma ChatSC por dentro">
+    <div class="container">
+
+      <div class="screenshots-header">
+        <span class="section-tag">Por dentro da plataforma</span>
+        <h2 class="section-heading reveal">
+          Conheça a plataforma
+          <span class="gradient-text"> na prática</span>
+        </h2>
+        <p class="reveal reveal-delay-1">
+          Interface simples, rápida e desenhada para o dia a dia do seu escritório.
+        </p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="screenshots-tabs reveal reveal-delay-2" role="tablist" aria-label="Telas do sistema">
+        <button class="screen-tab active" data-tab="dashboard" role="tab" aria-selected="true" id="btn-tab-dashboard">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h8v9H3zM13 3h8v5h-8zM13 12h8v9h-8zM3 16h8v5H3z"/></svg>
+          Dashboard
+        </button>
+        <button class="screen-tab" data-tab="atendimentos" role="tab" aria-selected="false" id="btn-tab-atendimentos">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Atendimentos
+        </button>
+        <button class="screen-tab" data-tab="agendamentos" role="tab" aria-selected="false" id="btn-tab-agendamentos">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Agendamentos
+        </button>
+        <button class="screen-tab" data-tab="clientes" role="tab" aria-selected="false" id="btn-tab-clientes">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Clientes
+        </button>
+        <button class="screen-tab" data-tab="jornadas" role="tab" aria-selected="false" id="btn-tab-jornadas">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+          Jornadas
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="screenshots-panels">
+
+        <div class="screen-panel active" id="tab-dashboard">
+          <div class="screen-panel-inner">
+            <div class="screen-panel-img-wrapper">
+              <div class="screen-panel-browser-bar" aria-hidden="true">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">chatsc.com.br/dashboard</span>
+              </div>
+              <img src="images/screen_dashboard_v2.png" width="1823" height="863" alt="Dashboard do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="screen-panel-info">
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h8v9H3zM13 3h8v5h-8zM13 12h8v9h-8zM3 16h8v5H3z"/></svg></div>
+              <h3>Visão geral da operação</h3>
+              <p>Monitore filas, tempo de resposta, satisfação (CSAT) e produtividade em tempo real.</p>
+              <ul class="screen-panel-list">
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Filas de atendimento ao vivo</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Índice de satisfação CSAT</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Desempenho individual e por setor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-panel" id="tab-atendimentos">
+          <div class="screen-panel-inner">
+            <div class="screen-panel-img-wrapper">
+              <div class="screen-panel-browser-bar" aria-hidden="true">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">chatsc.com.br/atendimento</span>
+              </div>
+              <img src="images/screen_atendimentos_v2.png" width="1025" height="1534" alt="Central de atendimentos do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="screen-panel-info">
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div>
+              <h3>Central unificada de WhatsApp</h3>
+              <p>Todas as conversas organizadas por status, setor e atendente em um único canal.</p>
+              <ul class="screen-panel-list">
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Fila com status em tempo real</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Filtros rápidos de pendências</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Etiquetas e categorias automáticas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-panel" id="tab-agendamentos">
+          <div class="screen-panel-inner">
+            <div class="screen-panel-img-wrapper">
+              <div class="screen-panel-browser-bar" aria-hidden="true">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">chatsc.com.br/agendamentos</span>
+              </div>
+              <img src="images/screen_agendamentos_v2.png" width="1823" height="863" alt="Agendamentos do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="screen-panel-info">
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+              <h3>Disparos e avisos programados</h3>
+              <p>Programe mensagens, lembretes de impostos e comunicados com relatório de envio.</p>
+              <ul class="screen-panel-list">
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Disparos agendados e recorrentes</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Status de entrega em tempo real</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Listas segmentadas por cliente</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-panel" id="tab-clientes">
+          <div class="screen-panel-inner">
+            <div class="screen-panel-img-wrapper">
+              <div class="screen-panel-browser-bar" aria-hidden="true">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">chatsc.com.br/clientes</span>
+              </div>
+              <img src="images/screen_clientes_v2.png" width="1050" height="1498" alt="Carteira de clientes do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="screen-panel-info">
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+              <h3>Carteira de clientes conectada</h3>
+              <p>Visualização completa dos dados da empresa, contatos e integração nativa com Acessórias.</p>
+              <ul class="screen-panel-list">
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Dados organizados por empresa</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Busca rápida de cadastros</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Histórico vinculado às conversas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="screen-panel" id="tab-jornadas">
+          <div class="screen-panel-inner">
+            <div class="screen-panel-img-wrapper">
+              <div class="screen-panel-browser-bar" aria-hidden="true">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+                <span class="browser-url">chatsc.com.br/jornadas</span>
+              </div>
+              <img src="images/screen_jornadas_v2.png" width="1097" height="1434" alt="Jornadas do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+            </div>
+            <div class="screen-panel-info">
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div>
+              <h3>Processos padronizados</h3>
+              <p>Crie fluxos para abertura de empresa, onboarding de novos clientes e demandas recorrentes.</p>
+              <ul class="screen-panel-list">
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Modelos prontos de rotina contábil</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Etapas com prazos e responsáveis</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Acompanhamento de progresso</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.screenshots-panels -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FEATURES / PILLARS
+       ============================================================ -->
+  <section class="section features-section light-section" id="recursos" aria-label="Recursos e funcionalidades">
+    <div class="container">
+      <div class="features-header">
+        <span class="section-tag">Funcionalidades</span>
+        <h2 class="section-heading reveal">
+          Tudo que seu escritório precisa
+          <span class="gradient-text"> em uma plataforma</span>
+        </h2>
+        <p class="reveal reveal-delay-1">
+          Ferramentas práticas para organizar o atendimento e aumentar a produtividade.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+              <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+          <h3>Atendimento Multiusuário</h3>
+          <p>Múltiplos atendentes em um único número WhatsApp com distribuição por setores e histórico compartilhado.</p>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon" aria-hidden="true" style="background: linear-gradient(135deg, #D95FBA, #8A4FD4);">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+              <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3>CRM &amp; Dados do Cliente</h3>
+          <p>Histórico completo, cadastros, tags e demandas do cliente unificados na tela do atendimento.</p>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon" aria-hidden="true" style="background: linear-gradient(135deg, #00C6FF, #4A2FC4);">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+              <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Ordens de Serviço</h3>
+          <p>Transforme mensagens em demandas com prazos, responsáveis e status de acompanhamento.</p>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon" aria-hidden="true" style="background: linear-gradient(135deg, #31216E, #6542E8);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 32 32">
+              <path d="M9 15v-5a5 5 0 0110 0v13a5 5 0 0010 0v-4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="23" r="6" fill="#31216E" stroke="white" stroke-width="2.5"/>
+              <circle cx="9" cy="21.5" r="2.5" stroke="white" stroke-width="2.25"/>
+              <path d="M4.7 27.5c.85-2.2 2.35-3.3 4.3-3.3s3.45 1.1 4.3 3.3" stroke="white" stroke-width="2.25" stroke-linecap="round"/>
+              <path fill="white" fill-rule="evenodd" d="M27 2a5 5 0 00-5 5c0 3.75 5 9 5 9s5-5.25 5-9a5 5 0 00-5-5zm0 3a2 2 0 100 4 2 2 0 000-4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <h3>Jornadas do Cliente</h3>
+          <p>Acompanhe etapas de onboarding, legalização e entregas periódicas sem perder prazos.</p>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon" aria-hidden="true" style="background: linear-gradient(135deg, #6542E8, #D95FBA);">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+              <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+            </svg>
+          </div>
+          <h3>Avisos e Transmissões</h3>
+          <p>Programe disparos, lembretes de vencimento e comunicados com confirmação de entrega.</p>
+        </article>
+
+        <article class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon" aria-hidden="true" style="background: linear-gradient(135deg, #D95FBA, #00C6FF);">
+            <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+              <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3>Métricas &amp; CSAT</h3>
+          <p>Relatórios de tempo médio de atendimento, avaliação de satisfação e volumetria por setor.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       API OFICIAL
+       ============================================================ -->
+  <section class="section api-section" id="api-oficial" aria-label="API Oficial WhatsApp">
+    <div class="container">
+      <div class="api-inner">
+
+        <div class="api-visual reveal reveal-left">
+          <div class="api-card-visual">
+            <div class="api-logo-row">
+              <div class="api-logo-item">
+                <div class="api-logo-box whatsapp" aria-hidden="true">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                    <rect x="7" y="2.5" width="10" height="19" rx="2.5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 5.5h4M11 18.5h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span>WhatsApp Business</span>
+              </div>
+              <div class="api-connector" aria-hidden="true">+</div>
+              <div class="api-logo-item">
+                <div class="api-logo-box coex" aria-hidden="true">
+                  <img src="images/favicon_web.png" width="128" height="130" alt="" loading="lazy" decoding="async" />
+                </div>
+                <span>ChatSC</span>
+              </div>
+            </div>
+            <p class="api-description">
+              Na modalidade <strong>Coex</strong>, seu WhatsApp continua ativo no celular enquanto a equipe atende pelo ChatSC.
+            </p>
+
+            <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 10px;">
+              <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color: var(--text-secondary);">
+                <span style="width:8px;height:8px;border-radius:50%;background:#25D366;flex-shrink:0;"></span>
+                Mesmo número ativo no celular e na web
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color: var(--text-secondary);">
+                <span style="width:8px;height:8px;border-radius:50%;background:#6542E8;flex-shrink:0;"></span>
+                Múltiplos atendentes simultâneos
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color: var(--text-secondary);">
+                <span style="width:8px;height:8px;border-radius:50%;background:#D95FBA;flex-shrink:0;"></span>
+                Histórico centralizado e seguro
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="api-content reveal reveal-right">
+          <span class="section-tag">API Oficial</span>
+          <h2>Atendimento profissional mantendo o <span class="gradient-text">WhatsApp no celular</span></h2>
+          <p>
+            Com a integração oficial Coex da Meta, seu escritório ganha atendimento multiusuário sem precisar trocar de número ou abrir mão do app WhatsApp Business no celular.
+          </p>
+          <div class="api-features">
+            <div class="api-feature-item">
+              <div class="check" aria-hidden="true">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              API Oficial verificada pela Meta
+            </div>
+            <div class="api-feature-item">
+              <div class="check" aria-hidden="true">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              Templates e comunicados homologados
+            </div>
+            <div class="api-feature-item">
+              <div class="check" aria-hidden="true">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              Sem risco de banimento de número
+            </div>
+            <div class="api-feature-item">
+              <div class="check" aria-hidden="true">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              Pronto para equipes de qualquer porte
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       INTEGRATIONS
+       ============================================================ -->
+  <section class="section integrations-section" id="integracoes" aria-label="Integrações">
+    <div class="container">
+      <div class="integrations-header">
+        <span class="section-tag">Integrações</span>
+        <h2 class="section-heading reveal">
+          Conectado aos principais
+          <span class="gradient-text"> sistemas contábeis</span>
+        </h2>
+        <p class="reveal reveal-delay-1">
+          Consulte dados de clientes e obrigações sem sair da conversa no ChatSC.
+        </p>
+      </div>
+
+      <div class="integrations-grid">
+
+        <article class="integration-card reveal reveal-delay-1">
+          <div class="integration-logo whatsapp" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3>WhatsApp Oficial</h3>
+          <p>API Oficial com Coex: atenda no ChatSC e mantenha o app WhatsApp ativo no celular.</p>
+          <span class="integration-badge official">API Oficial Meta</span>
+        </article>
+
+        <article class="integration-card reveal reveal-delay-2">
+          <div class="integration-logo acessorias" aria-hidden="true">
+            <svg width="36" height="36" fill="none" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="8" height="8" rx="2" fill="currentColor" opacity="0.8"/>
+              <rect x="13" y="3" width="8" height="8" rx="2" fill="currentColor" opacity="0.5"/>
+              <rect x="3" y="13" width="8" height="8" rx="2" fill="currentColor" opacity="0.5"/>
+              <rect x="13" y="13" width="8" height="8" rx="2" fill="currentColor" opacity="0.9"/>
+            </svg>
+          </div>
+          <h3>Acessórias</h3>
+          <p>Importe cadastros e consulte solicitações e obrigações diretamente no atendimento.</p>
+          <span class="integration-badge native">Integração nativa</span>
+        </article>
+
+        <article class="integration-card reveal reveal-delay-3">
+          <div class="integration-logo gclick" aria-hidden="true">
+            <svg width="36" height="36" fill="none" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 12l3 3 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>G-Click</h3>
+          <p>Vincule cadastros e consulte informações operacionais sem trocar de janela.</p>
+          <span class="integration-badge native">Integração nativa</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BENEFITS
+       ============================================================ -->
+  <section class="section benefits-section light-section" aria-label="Benefícios do ChatSC">
+    <div class="container">
+      <div class="benefits-header">
+        <span class="section-tag">Benefícios</span>
+        <h2 class="section-heading reveal">
+          Gestão, contexto e
+          <span class="gradient-text"> produtividade</span>
+        </h2>
+        <p class="lead reveal reveal-delay-1">
+          Mais controle para a gestão, agilidade para a equipe e clareza para o cliente.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card benefit-card-1 reveal reveal-delay-1">
+          <div class="benefit-number">01</div>
+          <div class="benefit-label">Gestão em Tempo Real</div>
+          <p class="benefit-desc">
+            Acompanhe filas, tempo de resposta, satisfação (CSAT) e demandas por setor.
+          </p>
+        </div>
+        <div class="benefit-card benefit-card-2 reveal reveal-delay-2">
+          <div class="benefit-number">02</div>
+          <div class="benefit-label">Contexto no Atendimento</div>
+          <p class="benefit-desc">
+            Histórico completo, demandas anteriores e dados do cliente sempre à mão.
+          </p>
+        </div>
+        <div class="benefit-card benefit-card-3 reveal reveal-delay-3">
+          <div class="benefit-number">03</div>
+          <div class="benefit-label">Execução Rastreável</div>
+          <p class="benefit-desc">
+            Cada solicitação vira uma demanda com responsável, prazo e status definido.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="section testimonials-section light-section" aria-label="Depoimentos">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-heading reveal">O que dizem os escritórios contábeis</h2>
+        <p class="reveal reveal-delay-1">Resultados reais de quem organizou o atendimento com o ChatSC.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <blockquote class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars" aria-label="5 estrelas">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <p class="testimonial-text">
+            Antes perdíamos mensagens no WhatsApp. Com o ChatSC, cada demanda tem responsável e prazo. A equipe trabalha muito mais organizada.
+          </p>
+          <footer class="testimonial-author">
+            <img src="images/avatar_ricardo_web.jpg" width="160" height="160" alt="Ricardo Mendes" class="testimonial-avatar-img" loading="lazy" decoding="async" />
+            <div>
+              <div class="testimonial-name">Ricardo Mendes</div>
+              <div class="testimonial-role">Sócio — Mendes Contabilidade</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars" aria-label="5 estrelas">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <p class="testimonial-text">
+            A integração com o Acessórias agilizou demais. Vejo o que o cliente precisa sem sair da conversa. Atendimento muito mais rápido.
+          </p>
+          <footer class="testimonial-author">
+            <img src="images/avatar_ana_web.jpg" width="160" height="160" alt="Ana Silva" class="testimonial-avatar-img" loading="lazy" decoding="async" />
+            <div>
+              <div class="testimonial-name">Ana Silva</div>
+              <div class="testimonial-role">Gestora — Silva &amp; Associados</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-stars" aria-label="5 estrelas">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote" aria-hidden="true">"</p>
+          <p class="testimonial-text">
+            O dashboard com CSAT e tempo de resposta me deu controle total da equipe. Agora sei exatamente como melhorar o serviço.
+          </p>
+          <footer class="testimonial-author">
+            <img src="images/avatar_carlos_web.jpg" width="160" height="160" alt="Carlos Ferreira" class="testimonial-avatar-img" loading="lazy" decoding="async" />
+            <div>
+              <div class="testimonial-name">Carlos Ferreira</div>
+              <div class="testimonial-role">Proprietário — CF Contábil</div>
+            </div>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRICING SECTION
+       ============================================================ -->
+  <section class="section pricing-section" id="precos" aria-label="Planos e preços">
+    <div class="container">
+      <div class="pricing-header">
+        <span class="section-tag">Planos</span>
+        <h2 class="section-heading reveal">
+          Escolha o plano ideal
+          <span class="gradient-text"> para o seu escritório</span>
+        </h2>
+        <p class="reveal reveal-delay-1">Planos transparentes sem taxas ocultas.</p>
+      </div>
+
+      <div class="pricing-carousel-controls" aria-label="Navegação dos planos">
+        <button type="button" class="pricing-carousel-btn" id="pricing-prev" aria-label="Ver plano anterior">←</button>
+        <span class="pricing-carousel-status" aria-live="polite"><strong id="pricing-current">1</strong> de 4</span>
+        <button type="button" class="pricing-carousel-btn" id="pricing-next" aria-label="Ver próximo plano">→</button>
+      </div>
+
+      <div class="pricing-grid" id="pricing-carousel">
+        <article class="pricing-card reveal reveal-delay-1" id="plan-starter">
+          <div class="pricing-card-top">
+            <div class="pricing-badge starter-badge">Starter</div>
+            <p class="pricing-desc">Para equipes enxutas.</p>
+            <div class="pricing-price"><span class="pricing-currency">R$</span><span class="pricing-value" data-target="197">197</span><span class="pricing-period">/mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-users"><span class="pf-check">✓</span> <strong>Até 5 usuários</strong></li>
+            <li><span class="pf-check">✓</span> 1 número WhatsApp</li>
+            <li><span class="pf-check">✓</span> Gestão de clientes e demandas</li>
+            <li><span class="pf-check">✓</span> Jornadas do cliente</li>
+            <li><span class="pf-check">✓</span> Relatórios de atendimento</li>
+            <li><span class="pf-check">✓</span> Ordens de serviço</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-pricing" id="btn-starter"><span>Começar agora</span></a>
+        </article>
+
+        <article class="pricing-card reveal reveal-delay-2" id="plan-essencial">
+          <div class="pricing-card-top">
+            <div class="pricing-badge essencial-badge">Essencial</div>
+            <p class="pricing-desc">Para empresas em consolidação.</p>
+            <div class="pricing-price"><span class="pricing-currency">R$</span><span class="pricing-value" data-target="297">297</span><span class="pricing-period">/mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-users"><span class="pf-check">✓</span> <strong>De 6 a 10 usuários</strong></li>
+            <li><span class="pf-check">✓</span> 1 número WhatsApp</li>
+            <li><span class="pf-check">✓</span> Gestão de clientes e demandas</li>
+            <li><span class="pf-check">✓</span> Jornadas do cliente</li>
+            <li><span class="pf-check">✓</span> Relatórios de atendimento</li>
+            <li><span class="pf-check">✓</span> Ordens de serviço</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-pricing" id="btn-essencial"><span>Começar agora</span></a>
+        </article>
+
+        <article class="pricing-card pricing-card-pro reveal reveal-delay-3" id="plan-profissional">
+          <div class="pricing-popular-badge">Mais popular</div>
+          <div class="pricing-card-top">
+            <div class="pricing-badge pro-badge">Profissional</div>
+            <p class="pricing-desc">Ideal para escritórios em expansão.</p>
+            <div class="pricing-price"><span class="pricing-currency">R$</span><span class="pricing-value" data-target="397">397</span><span class="pricing-period">/mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-users"><span class="pf-check pro">✓</span> <strong>Até 20 usuários</strong></li>
+            <li><span class="pf-check pro">✓</span> 1 número WhatsApp</li>
+            <li><span class="pf-check pro">✓</span> Gestão de clientes e demandas</li>
+            <li><span class="pf-check pro">✓</span> Jornadas do cliente</li>
+            <li><span class="pf-check pro">✓</span> Relatórios de atendimento</li>
+            <li><span class="pf-check pro">✓</span> Ordens de serviço</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-pricing" id="btn-profissional"><span>Começar agora</span></a>
+        </article>
+
+        <article class="pricing-card reveal reveal-delay-4" id="plan-premium">
+          <div class="pricing-card-top">
+            <div class="pricing-badge unlimited-badge">Premium</div>
+            <p class="pricing-desc">Para grandes operações contábeis.</p>
+            <div class="pricing-price"><span class="pricing-currency">R$</span><span class="pricing-value" data-target="497">497</span><span class="pricing-period">/mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-users"><span class="pf-check">✓</span> <strong>Até 30 usuários</strong></li>
+            <li><span class="pf-check">✓</span> 1 número WhatsApp</li>
+            <li><span class="pf-check">✓</span> Gestão de clientes e demandas</li>
+            <li><span class="pf-check">✓</span> Jornadas do cliente</li>
+            <li><span class="pf-check">✓</span> Relatórios de atendimento</li>
+            <li><span class="pf-check">✓</span> Ordens de serviço</li>
+          </ul>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-pricing" id="btn-premium"><span>Começar agora</span></a>
+        </article>
+      </div>
+
+      <p class="pricing-note reveal">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        Sem fidelidade. Cancele quando quiser. Suporte incluso em todos os planos.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="section faq-section" id="faq" aria-label="Perguntas frequentes">
+    <div class="container">
+      <div class="faq-inner">
+
+        <div class="faq-sidebar">
+          <span class="section-tag">FAQ</span>
+          <h2 class="reveal">Perguntas <span class="gradient-text">frequentes</span></h2>
+          <p class="reveal reveal-delay-1">
+            Dúvidas comuns sobre o ChatSC respondidas de forma simples.
+          </p>
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="faq-cta" style="margin-top: 1rem;">
+            <span>Falar com a equipe</span>
+          </a>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
+              O ChatSC substitui o WhatsApp?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <div class="faq-answer-inner">
+                Não. Ele se conecta ao seu WhatsApp para organizar, gerenciar e centralizar as conversas da equipe em uma única tela.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
+              Preciso trocar o número do escritório?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <div class="faq-answer-inner">
+                Não. Você utiliza o mesmo número que seu escritório já utiliza no WhatsApp Business.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
+              Posso usar no celular e na plataforma ao mesmo tempo?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <div class="faq-answer-inner">
+                Sim! Na modalidade oficial Coex, o aplicativo WhatsApp Business no celular continua ativo enquanto a equipe atende pelo ChatSC.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
+              Quantas pessoas podem atender juntas?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <div class="faq-answer-inner">
+                Quantas o seu plano permitir. Todas atendem no mesmo número com controle por setores e perfis.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
+              O que são demandas, jornadas e ordens de serviço?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <div class="faq-answer-inner">
+                Demandas e OS registram solicitações com prazos e responsáveis. Jornadas organizam processos recorrentes (ex: abertura de empresas e onboarding).
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">
+              Quais sistemas contábeis são integrados?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+              <div class="faq-answer-inner">
+                Integração nativa com <strong>Acessórias</strong> e <strong>G-Click</strong> para consulta de cadastros e tarefas dentro da conversa.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q7" aria-controls="faq-a7">
+              Como funcionam os disparos de comunicados?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7">
+              <div class="faq-answer-inner">
+                Você pode agendar mensagens, enviar avisos em lote e programar lembretes recorrentes acompanhando a entrega.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q8" aria-controls="faq-a8">
+              Os dados do meu escritório ficam seguros?
+              <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-a8" role="region" aria-labelledby="faq-q8">
+              <div class="faq-answer-inner">
+                Sim. A plataforma segue rigorosas normas de segurança e privacidade (LGPD), mantendo o histórico de conversas seguro.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA FINAL
+       ============================================================ -->
+  <section class="section cta-section" id="cta" aria-label="Agende sua demonstração">
+    <canvas id="rocket-canvas" class="rocket-canvas" aria-hidden="true"></canvas>
+
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-orb-1" aria-hidden="true"></div>
+        <div class="cta-orb-2" aria-hidden="true"></div>
+
+        <div class="cta-tag">
+          <span class="section-tag">Comece agora</span>
+        </div>
+
+        <h2 class="reveal">
+          Organize o atendimento.<br/>
+          <span class="gradient-text">Escale sua contabilidade.</span>
+        </h2>
+
+        <p class="reveal reveal-delay-1">
+          Agende uma demonstração e veja o ChatSC na prática no seu escritório contábil.
+        </p>
+
+        <div class="cta-actions reveal reveal-delay-2">
+          <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-primary btn-lg"
+             id="final-cta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>Agendar demonstração</span>
+          </a>
+          <a href="#como-funciona" class="btn btn-secondary btn-lg" id="final-secondary-btn">
+            <span>Ver como funciona</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" aria-label="ChatSC — Ir para o início">
+            <img src="images/logo_horizontal_light_web.png" width="450" height="105" alt="ChatSC Logo" class="footer-logo-img" loading="lazy" decoding="async" />
+          </a>
+          <p>
+            Tecnologia para organizar, acompanhar e encantar.<br/>
+            Plataforma de atendimento e sucesso do cliente para escritórios contábeis.
+          </p>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a href="https://www.instagram.com/sucessochatsc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do ChatSC">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@Sucessodocliente-l9y" target="_blank" rel="noopener noreferrer" aria-label="YouTube do ChatSC">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="#recursos">Funcionalidades</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#integracoes">Integrações</a></li>
+            <li><a href="#produto">O problema que resolvemos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#inicio">Sobre o ChatSC</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC." target="_blank" rel="noopener noreferrer">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="politica-de-privacidade">Política de Privacidade</a></li>
+            <li><a href="termos-de-uso">Termos de Uso</a></li>
+            <li><a href="politica-de-privacidade#direitos-dos-titulares">LGPD</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ChatSC — Todos os direitos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="politica-de-privacidade">Privacidade</a>
+          <a href="termos-de-uso">Termos</a>
+          <a href="politica-de-privacidade#direitos-dos-titulares">LGPD</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send/?phone=5562993353539&amp;text=Ol%C3%A1%21+Quero+solicitar+uma+demonstra%C3%A7%C3%A3o+do+ChatSC."
+     target="_blank"
+     rel="noopener noreferrer"
+     class="whatsapp-float-btn"
+     aria-label="Falar pelo WhatsApp"
+     id="whatsapp-float-link">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js?v=20260909-1"></script>
+</body>
+</html>
