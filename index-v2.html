@@ -38,7 +38,7 @@
 
   <link rel="icon" type="image/png" href="images/favicon_web.png" />
   <link rel="apple-touch-icon" href="images/favicon_web.png" />
-  <link rel="stylesheet" href="style.css?v=20260909-1" />
+  <link rel="stylesheet" href="style.css?v=20260911-3" />
 </head>
 
 <body>
@@ -181,12 +181,12 @@
               </div>
             </div>
 
-            <!-- Main mockup image -->
+            <!-- Notebook mockup -->
             <img
               src="images/hero_notebook.jpg"
               width="900"
               height="1600"
-              alt="Interface do ChatSC mostrando atendimentos, jornadas e demandas organizadas"
+              alt="Notebook exibindo a plataforma ChatSC"
               class="hero-mockup"
               id="hero-mockup-img"
               loading="eager"
@@ -328,7 +328,7 @@
 
         <div class="problem-solution reveal reveal-right">
           <div class="problem-solution-img-wrapper">
-            <img src="images/screen_dashboard_v2.png" width="1823" height="863" alt="Visão do Dashboard ChatSC" class="problem-solution-img" loading="lazy" decoding="async" />
+            <img src="images/platform_dashboard_real.png" width="1917" height="1115" alt="Visão real do Dashboard ChatSC com dados demonstrativos" class="problem-solution-img" loading="lazy" decoding="async" />
           </div>
           <p class="problem-solution-label">A resposta do ChatSC</p>
           <h3>
@@ -365,7 +365,7 @@
 
       <!-- Visual Workflow Banner -->
       <div class="how-visual-banner reveal reveal-delay-1">
-        <img src="images/screen_atendimentos_v2.png" width="1025" height="1534" alt="Fluxo visual do atendimento no ChatSC" class="workflow-img" loading="lazy" decoding="async" />
+        <img src="images/platform_atendimento_real.png" width="1917" height="1115" alt="Fluxo real de atendimento no ChatSC com dados demonstrativos" class="workflow-img" loading="lazy" decoding="async" />
         <div class="workflow-caption">
           <span class="workflow-dot"></span> Fluxo automatizado de ponta a ponta
         </div>
@@ -457,17 +457,13 @@
           <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           Atendimentos
         </button>
-        <button class="screen-tab" data-tab="agendamentos" role="tab" aria-selected="false" id="btn-tab-agendamentos">
-          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          Agendamentos
+        <button class="screen-tab" data-tab="demandas" role="tab" aria-selected="false" id="btn-tab-demandas">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          Demandas
         </button>
-        <button class="screen-tab" data-tab="clientes" role="tab" aria-selected="false" id="btn-tab-clientes">
-          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          Clientes
-        </button>
-        <button class="screen-tab" data-tab="jornadas" role="tab" aria-selected="false" id="btn-tab-jornadas">
-          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
-          Jornadas
+        <button class="screen-tab" data-tab="indicadores" role="tab" aria-selected="false" id="btn-tab-indicadores">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></svg>
+          Indicadores
         </button>
       </div>
 
@@ -481,7 +477,7 @@
                 <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
                 <span class="browser-url">chatsc.com.br/dashboard</span>
               </div>
-              <img src="images/screen_dashboard_v2.png" width="1823" height="863" alt="Dashboard do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+              <img src="images/platform_dashboard_real.png" width="1917" height="1115" alt="Dashboard real do ChatSC com dados demonstrativos" class="screen-panel-img" loading="lazy" decoding="async" />
             </div>
             <div class="screen-panel-info">
               <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h8v9H3zM13 3h8v5h-8zM13 12h8v9h-8zM3 16h8v5H3z"/></svg></div>
@@ -503,7 +499,7 @@
                 <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
                 <span class="browser-url">chatsc.com.br/atendimento</span>
               </div>
-              <img src="images/screen_atendimentos_v2.png" width="1025" height="1534" alt="Central de atendimentos do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+              <img src="images/platform_atendimento_real.png" width="1917" height="1115" alt="Central real de atendimentos do ChatSC com dados demonstrativos" class="screen-panel-img" loading="lazy" decoding="async" />
             </div>
             <div class="screen-panel-info">
               <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div>
@@ -518,67 +514,45 @@
           </div>
         </div>
 
-        <div class="screen-panel" id="tab-agendamentos">
+        <div class="screen-panel" id="tab-demandas">
           <div class="screen-panel-inner">
             <div class="screen-panel-img-wrapper">
               <div class="screen-panel-browser-bar" aria-hidden="true">
                 <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-                <span class="browser-url">chatsc.com.br/agendamentos</span>
+                <span class="browser-url">chatsc.com.br/dashboard/demandas</span>
               </div>
-              <img src="images/screen_agendamentos_v2.png" width="1823" height="863" alt="Agendamentos do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+              <img src="images/platform_demandas_real.png" width="1917" height="1115" alt="Indicadores reais de demandas no ChatSC com dados demonstrativos" class="screen-panel-img" loading="lazy" decoding="async" />
             </div>
             <div class="screen-panel-info">
-              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
-              <h3>Disparos e avisos programados</h3>
-              <p>Programe mensagens, lembretes de impostos e comunicados com relatório de envio.</p>
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+              <h3>Demandas sob controle</h3>
+              <p>Acompanhe volume, cobertura e valores da operação.</p>
               <ul class="screen-panel-list">
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Disparos agendados e recorrentes</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Status de entrega em tempo real</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Listas segmentadas por cliente</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Ocorrências e cobertura</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Serviços extras</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Evolução por período</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="screen-panel" id="tab-clientes">
+        <div class="screen-panel" id="tab-indicadores">
           <div class="screen-panel-inner">
             <div class="screen-panel-img-wrapper">
               <div class="screen-panel-browser-bar" aria-hidden="true">
                 <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-                <span class="browser-url">chatsc.com.br/clientes</span>
+                <span class="browser-url">chatsc.com.br/indicadores</span>
               </div>
-              <img src="images/screen_clientes_v2.png" width="1050" height="1498" alt="Carteira de clientes do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
+              <img src="images/platform_indicadores_real.png" width="1917" height="1115" alt="Indicadores reais do ChatSC com dados demonstrativos" class="screen-panel-img" loading="lazy" decoding="async" />
             </div>
             <div class="screen-panel-info">
-              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
-              <h3>Carteira de clientes conectada</h3>
-              <p>Visualização completa dos dados da empresa, contatos e integração nativa com Acessórias.</p>
+              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></svg></div>
+              <h3>Indicadores para decidir melhor</h3>
+              <p>Veja perfil da carteira, churn, ticket médio e segmentos.</p>
               <ul class="screen-panel-list">
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Dados organizados por empresa</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Busca rápida de cadastros</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Histórico vinculado às conversas</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="screen-panel" id="tab-jornadas">
-          <div class="screen-panel-inner">
-            <div class="screen-panel-img-wrapper">
-              <div class="screen-panel-browser-bar" aria-hidden="true">
-                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-                <span class="browser-url">chatsc.com.br/jornadas</span>
-              </div>
-              <img src="images/screen_jornadas_v2.png" width="1097" height="1434" alt="Jornadas do ChatSC" class="screen-panel-img" loading="lazy" decoding="async" />
-            </div>
-            <div class="screen-panel-info">
-              <div class="screen-panel-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div>
-              <h3>Processos padronizados</h3>
-              <p>Crie fluxos para abertura de empresa, onboarding de novos clientes e demandas recorrentes.</p>
-              <ul class="screen-panel-list">
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Modelos prontos de rotina contábil</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Etapas com prazos e responsáveis</li>
-                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Acompanhamento de progresso</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Porte e regime tributário</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Churn e ticket médio</li>
+                <li><svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Segmentação da carteira</li>
               </ul>
             </div>
           </div>
@@ -1305,6 +1279,6 @@
     </svg>
   </a>
 
-  <script src="script.js?v=20260909-1"></script>
+  <script src="script.js?v=20260911-1"></script>
 </body>
 </html>

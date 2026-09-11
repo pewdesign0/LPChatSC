@@ -658,6 +658,30 @@ BACKGROUND MESH / ORBS==========================================================
   transition: var(--transition-normal);
 }
 
+@media (max-width: 1100px) and (min-width: 769px) {
+  .navbar {
+    padding-inline: var(--space-md);
+  }
+
+  .nav-inner {
+    justify-content: space-between;
+    gap: var(--space-lg);
+  }
+
+  .nav-links {
+    gap: var(--space-lg);
+  }
+
+  .nav-cta .btn-secondary {
+    display: none;
+  }
+
+  .nav-cta .btn-primary {
+    padding-inline: var(--space-lg);
+    white-space: nowrap;
+  }
+}
+
 /* Mobile toggle adapts to scrolled (white bg) state */
 .navbar.scrolled .nav-mobile-toggle span {
   background: var(--text-dark);
@@ -3985,25 +4009,21 @@ body {
 }
 
 .screenshots-panels {
-  min-height: 570px;
+  min-height: 500px;
   overflow-anchor: none;
 }
 
 .screen-panel-inner {
-  min-height: 570px;
+  min-height: 500px;
 }
 
 .screen-panel-img-wrapper {
-  height: 520px;
-  display: flex;
-  flex-direction: column;
+  height: auto;
 }
 
 .screen-panel-img {
-  flex: 1;
-  min-height: 0;
-  height: 100%;
-  object-fit: contain;
+  aspect-ratio: 1917 / 1115;
+  object-fit: cover;
   background: #100d2e;
 }
 
@@ -4107,7 +4127,7 @@ body {
   }
 
   .screen-panel-img-wrapper {
-    height: 390px;
+    height: auto;
   }
 }
 
